@@ -6,7 +6,7 @@
     },
     "name": "pagseguro",
     "description": "Fornece integração à API de pagamentos do PagSeguro",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "homepage": "https://github.com/cranic/node-pagseguro",
     "repository": {
         "type": "git",

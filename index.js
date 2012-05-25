@@ -90,3 +90,5 @@ pagseguro = (function() {
   return pagseguro;
 
 })();
+
+module.exports = pagseguro;
