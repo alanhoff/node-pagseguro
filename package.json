@@ -1,0 +1,23 @@
+{
+    "author": {
+        "name": "Alan Hoffmeister",
+        "email": "contato@cranic.com.br",
+        "url": "https://github.com/cranic"
+    },
+    "name": "pagseguro",
+    "description": "Fornece integração à API de pagamentos do PagSeguro",
+    "version": "0.0.1",
+    "homepage": "https://github.com/cranic/node-pagseguro",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/cranic/node-pagseguro.git"
+    },
+    "dependencies": {
+        "request": "2.9.x"
+    },
+    "devDependencies": {},
+    "optionalDependencies": {},
+    "engines": {
+        "node": "*"
+    }
+}
