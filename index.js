@@ -27,10 +27,10 @@ pagseguro = (function() {
   };
 
   pagseguro.prototype.addItem = function(item) {
-    if (!this.obj['itens']) {
-      this.obj['itens'] = new Array;
+    if (!this.obj['items']) {
+      this.obj['items'] = new Array;
     }
-    this.obj.itens.push({
+    this.obj.items.push({
       item: item
     });
     return this;
@@ -66,7 +66,6 @@ pagseguro = (function() {
   };
 
   pagseguro.prototype.send = function(callback) {
-    var options;
     options = {
       uri: "https://ws.pagseguro.uol.com.br/v2/checkout?email=" + this.email + "&token=" + this.token,
       method: 'POST',
@@ -77,6 +76,7 @@ pagseguro = (function() {
         checkout: this.obj
       })
     };
+
     return req(options, function(err, res, body) {
       if (err) {
         callback(err);
