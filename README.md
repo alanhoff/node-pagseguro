@@ -24,25 +24,25 @@ Como usar
     pag.addItem({
         id: 1,
         description: 'Descrição do primeiro produto',
-        amount: 4230.00,
+        amount: "4230.00",
         quantity: 3,
-        wight: 2342
+        weight: 2342
     });
 
     pag.addItem({
         id: 2,
         description: 'Esta é uma descrição',
-        amount: 5230.00,
+        amount: "5230.00",
         quantity: 3,
-        wight: 2342
+        weight: 2342
     });
 
     pag.addItem({
         id: 3,
         description: 'Descrição do último produto',
-        amount: 8230.00,
+        amount: "8230.00",
         quantity: 3,
-        wight: 2342
+        weight: 2342
     });
 
     //Configurando as informações do comprador
