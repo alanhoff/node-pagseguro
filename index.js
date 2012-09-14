@@ -1,5 +1,4 @@
 
 coffee = require('coffee-script');
-pagseguro = require(__dirname + '/lib/pagseguro');
 
-module.exports = new pagseguro();
+module.exports = require(__dirname + '/lib/pagseguro');
