@@ -4,6 +4,18 @@
         "email": "contato@cranic.com.br",
         "url": "https://github.com/cranic"
     },
+	"contributors" : [
+        {
+            "name" : "Alan Hoffmeister",
+            "email" : "contato@cranic.com.br",
+            "ur" : "https://github.com.br/cranic"
+        },
+        {
+            "name" : "Vinicius Trampusch",
+            "email" : "vinicius.trampusch@gmail.com",
+            "url" : "https://github.com/ViniciusTrampusch"
+        }
+    ],
     "name": "pagseguro",
     "description": "Fornece integração à API de pagamentos do PagSeguro",
     "version": "0.0.4",
