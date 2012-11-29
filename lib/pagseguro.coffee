@@ -70,4 +70,16 @@ class pagseguro
             callback(null, body) if !err
         );
 
+    notificationData: (notificationCode, callback) ->
+        options = {
+            uri: "https://ws.pagseguro.uol.com.br/v2/transactions/notifications/" + 
+                notificationCode + "?email=" + this.email + "&token=" + this.token,
+            method: "GET",
+        }
+
+        return req(options, (err, res, body) ->
+            callback(err) if err
+            callback(null, body) if !err
+        );
+
 module.exports = pagseguro;
