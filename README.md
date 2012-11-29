@@ -74,3 +74,13 @@ Como usar
         }
         console.log(res);
     });
+
+    // consultando uma notificação enviada pela API do PagSeguro para seu sistema
+    var pag = new pagseguro(email, token);
+    pag.notificationData(notificationCode, function(error, notification) {
+        if (error) {
+            console.log(error);
+        }
+        console.log(notification);
+    });
+
