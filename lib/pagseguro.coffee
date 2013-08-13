@@ -55,9 +55,12 @@ class pagseguro
     ###
     Configura as URLs de retorno e de notificação por pagamento
     ###
-    config: (configObj) ->
-        this.obj.redirectURL = configObj.redirectURL;
-        this.obj.notificationURL = configObj.notificationURL;
+    setRedirectURL: (url) ->
+        this.obj.redirectURL = url;
+        return this;
+
+    setNotificationURL: (url) ->
+        this.obj.notificationURL = url;
         return this;
 
     send: (callback) ->
