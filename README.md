@@ -67,6 +67,13 @@ Como usar
         country: 'BRA'
     });
 
+    //Configuranto URLs de retorno e e de notificação (Opcional)
+    //ver https://pagseguro.uol.com.br/v2/guia-de-integracao/finalizacao-do-pagamento.html#v2-item-redirecionando-o-comprador-para-uma-url-dinamica
+    pag.config({
+        redirectURL : "http://www.lojamodelo.com.br/retorno",
+        notificationURL : "http://www.lojamodelo.com.br/notificacao"
+    });
+
     //Enviando o xml ao pagseguro
     pag.send(function(err, res) {
         if (err) {
