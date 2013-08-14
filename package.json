@@ -14,21 +14,32 @@
             "name" : "Vinicius Trampusch",
             "email" : "vinicius.trampusch@gmail.com",
             "url" : "https://github.com/ViniciusTrampusch"
+        },
+        {
+            "name" : "Bernardo F. Domingues",
+            "email" : "bernardofd@gmail.com",
+            "url" : "https://github.com/bernardofd"
         }
     ],
     "name": "pagseguro",
     "description": "Fornece integração à API de pagamentos do PagSeguro",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "homepage": "https://github.com/cranic/node-pagseguro",
     "repository": {
         "type": "git",
         "url": "git://github.com/cranic/node-pagseguro.git"
     },
+    "scripts" : {
+        "prepublish" : "./node_modules/.bin/coffee -c ./lib/",
+        "build" : "npm run prepublish"
+    },
     "dependencies": {
         "request": "2.9.x",
         "jstoxml": "0.1.x"
     },
-    "devDependencies": {},
+    "devDependencies": {
+        "coffee-script" : "*"
+    },
     "optionalDependencies": {},
     "engines": {
         "node": "*"

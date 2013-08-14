@@ -51,7 +51,18 @@ class pagseguro
         this.obj.shipping.address['state'] = obj.state;
         this.obj.shipping.address['country'] = obj.country;
         return this;
-        
+
+    ###
+    Configura as URLs de retorno e de notificação por pagamento
+    ###
+    setRedirectURL: (url) ->
+        this.obj.redirectURL = url;
+        return this;
+
+    setNotificationURL: (url) ->
+        this.obj.notificationURL = url;
+        return this;
+
     send: (callback) ->
         options = {
             uri: "https://ws.pagseguro.uol.com.br/v2/checkout?email=" + this.email + "&token=" + this.token,
