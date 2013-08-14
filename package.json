@@ -30,7 +30,8 @@
         "url": "git://github.com/cranic/node-pagseguro.git"
     },
     "scripts" : {
-        "prepublish" : "./node_modules/.bin/coffee -c ./lib/"
+        "prepublish" : "./node_modules/.bin/coffee -c ./lib/",
+        "build" : "npm run prepublish"
     },
     "dependencies": {
         "request": "2.9.x",
