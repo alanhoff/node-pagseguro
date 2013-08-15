@@ -10,7 +10,7 @@ Instalação
 
 Como usar
 ---------
-    
+```javascript
     //Inicializar a função com o e-mail e token
     var pag, pagseguro;
     pagseguro = require('pagseguro');
@@ -67,6 +67,11 @@ Como usar
         country: 'BRA'
     });
 
+    //Configuranto URLs de retorno e de notificação (Opcional)
+    //ver https://pagseguro.uol.com.br/v2/guia-de-integracao/finalizacao-do-pagamento.html#v2-item-redirecionando-o-comprador-para-uma-url-dinamica
+    pag.setRedirectURL("http://www.lojamodelo.com.br/retorno");
+    pag.setNotificationURL("http://www.lojamodelo.com.br/notificacao");
+
     //Enviando o xml ao pagseguro
     pag.send(function(err, res) {
         if (err) {
@@ -74,3 +79,4 @@ Como usar
         }
         console.log(res);
     });
+```
