@@ -16,6 +16,9 @@ Como usar
     pagseguro = require('pagseguro');
     pag = new pagseguro('suporte@lojamodelo.com.br', '95112EE828D94278BD394E91C4388F20');
 
+    // Se estiver testando na sandbox, passe o terceiro argumento como true (A mesma token não é válida para o sandbox. Vide https://sandbox.pagseguro.uol.com.br/vendedor/configuracoes.html)
+    //pag = new pagseguro('suporte@lojamodelo.com.br', '95112EE828D94278BD394E91C4388F20', true);
+
     //Configurando a moeda e a ferência do pedido
     pag.currency('BRL');
     pag.reference('12345');
