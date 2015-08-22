@@ -1,0 +1,15 @@
+{
+	"name":	"node-pagseguro-sample",
+	"author": "Emerson Jose",
+	"description":	"Projeto exemplo como a implementação do node-pagseguro em node.js",
+	"version":	"0.0.1",
+	"private":	true,
+	"scripts": {
+			"start": "node app.js"
+	},
+	"dependencies":	{
+		"express": "2.5.10",
+		"ejs":	">=2.3.3",
+		"pagseguro": ">=0.1.0"
+	}				
+}
