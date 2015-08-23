@@ -1,14 +1,12 @@
 {
     "author": {
         "name": "Alan Hoffmeister",
-        "email": "contato@cranic.com.br",
-        "url": "https://github.com/cranic"
+        "email": "alanhoffmeister@gmail.com",
     },
 	"contributors" : [
         {
             "name" : "Alan Hoffmeister",
-            "email" : "contato@cranic.com.br",
-            "ur" : "https://github.com.br/cranic"
+            "email" : "alanhoffmeister@gmail.com",
         },
         {
             "name" : "Vinicius Trampusch",
@@ -24,10 +22,10 @@
     "name": "pagseguro",
     "description": "Fornece integração à API de pagamentos do PagSeguro",
     "version": "0.1.0",
-    "homepage": "https://github.com/cranic/node-pagseguro",
+    "homepage": "https://github.com/alanhoff/node-pagseguro",
     "repository": {
         "type": "git",
-        "url": "git://github.com/cranic/node-pagseguro.git"
+        "url": "git://github.com/alanhoff/node-pagseguro.git"
     },
     "scripts" : {
         "prepublish" : "./node_modules/.bin/coffee -c ./lib/",
