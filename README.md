@@ -8,6 +8,9 @@ Integração ao Pagseguro para sistemas usando o Node.js
 
 ## Como usar
 
+Veja um exemplo de projeto utilizando o pacote `pagseguro` acessando este
+repositório: https://github.com/emersonjsouza/node-pagseguro-sample.git
+
 ### Para pagamentos únicos
 
 ```javascript
