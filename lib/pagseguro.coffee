@@ -4,6 +4,7 @@ req = require('request');
 
 class pagseguro
     constructor: (configObj) ->
+        @obj = {}
         if arguments.length > 1
             @email = arguments[0]
             @token = arguments[1]
@@ -14,7 +15,10 @@ class pagseguro
             @email = configObj.email
             @token = configObj.token
             @mode = configObj.mode or "payment"
-        @obj = {}
+
+        @obj.maxAge = configObj.maxAge if configObj.maxAge?
+        @obj.maxUses = configObj.maxUses if configObj.maxUses?
+
         @xml = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>'
         return this
 
