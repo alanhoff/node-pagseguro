@@ -19,7 +19,9 @@ repositório: https://github.com/emersonjsouza/node-pagseguro-sample.git
     pagseguro = require('pagseguro');
     pag = new pagseguro({
         email : 'suporte@lojamodelo.com.br',
-        token: '95112EE828D94278BD394E91C4388F20'
+        token: '95112EE828D94278BD394E91C4388F20',
+        maxAge: 3000, // Determina o prazo (em segundos) durante o qual o código de pagamento poderá ser utilizado (opcional)
+        maxUses: 5 // Determina o número máximo de vezes que o código de pagamento poderá ser usado (opcional) 
     });
 
     //Configurando a moeda e a referência do pedido
