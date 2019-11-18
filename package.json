@@ -32,7 +32,7 @@
         "build" : "npm run prepublish"
     },
     "dependencies": {
-        "request": "2.9.x",
+        "request": "2.88.x",
         "jstoxml": "0.1.x"
     },
     "devDependencies": {
